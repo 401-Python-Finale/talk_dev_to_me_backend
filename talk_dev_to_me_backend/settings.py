@@ -46,11 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'backend',
     'rest_framework',
-    # 'corsheaders',
 ]
 
 MIDDLEWARE = [
-    # 'corsheaders.middleware.CoreMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -150,5 +148,3 @@ REST_FRAMEWORK = {
     ],
 }
     
-# CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
-# CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")

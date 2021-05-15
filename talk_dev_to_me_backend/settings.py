@@ -36,10 +36,6 @@ ALLOWED_HOSTS = tuple(env.list("ALLOWED_HOSTS"))
 # Application definition
 
 INSTALLED_APPS = [
-<<<<<<< HEAD
-=======
-
->>>>>>> de35ebaa2ea3071a42d7bbe50aeb56a49f6db5c7
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -49,7 +45,6 @@ INSTALLED_APPS = [
     "backend",
     "rest_framework",
     "corsheaders",
-<<<<<<< HEAD
 ]
 
 MIDDLEWARE = [
@@ -62,44 +57,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
-=======
 ]
 
-MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.security.SecurityMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'backend',
-    'rest_framework',
-    'corsheaders',
-]
-
-MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
-    'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
-
->>>>>>> de35ebaa2ea3071a42d7bbe50aeb56a49f6db5c7
-]
 
 ROOT_URLCONF = "talk_dev_to_me_backend.urls"
 
@@ -114,9 +73,9 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
-            ],
-        },
-    },
+            ]
+        }
+    }
 ]
 
 WSGI_APPLICATION = "talk_dev_to_me_backend.wsgi.application"
@@ -191,9 +150,7 @@ REST_FRAMEWORK = {
     ],
 }
 
+    
 CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
 CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
-<<<<<<< HEAD
-=======
 
->>>>>>> de35ebaa2ea3071a42d7bbe50aeb56a49f6db5c7

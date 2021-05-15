@@ -44,8 +44,6 @@ INSTALLED_APPS = [
     "backend",
     "rest_framework",
     "corsheaders",
-<<<<<<< HEAD
-=======
 ]
 
 MIDDLEWARE = [
@@ -58,7 +56,6 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
->>>>>>> 7f2bec5aa82b3b7cc9d0f1b5e01081570b332f55
 ]
 
 MIDDLEWARE = [
@@ -165,7 +162,3 @@ REST_FRAMEWORK = {
 
 CORS_ORIGIN_WHITELIST = tuple(env.list("ALLOWED_ORIGINS"))
 CORS_ALLOW_ALL_ORIGINS = env.bool("ALLOW_ALL_ORIGINS")
-<<<<<<< HEAD
-=======
-
->>>>>>> 7f2bec5aa82b3b7cc9d0f1b5e01081570b332f55
